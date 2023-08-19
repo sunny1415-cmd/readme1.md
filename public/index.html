@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Employee Form using JPDB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+            <h2>Employee Form using JPDB API </h2>
+            </div>
+            <form id="empForm" method="get">
+                <div class="form-group">
+                    <label>Employee ID : </label>
+                    
+                    <input type="text" id="empid" class="form-control" onchange="getEmp()">
+                </div>
+                <div class="form-group">
+                    <label>Employee Name :</label>
+                    <input type="text" id="empname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Basic Salary:</label>
+                    <input type="number" id="empsal" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>HRA : </label>
+                <input type="number" id="hra" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>DA : </label>
+                    <input type="number" id="da" class="form-control">
+                </div>
+                <div class ="fom-grooup">
+                    <label>Deduction : </label>
+                    <input type ="number" id="deduct" class="form-control">
+                </div>
+                <div class="form group text-center">
+                    
+                    <button type="button" class="btn btn-lg btn-primary" id="save" onclick="savedata()" disabled>Save</button>
+                    <button type="button" class="btn btn-lg btn-primary" id="change" onclick="changedata()" disabled>Change</button>
+                    <button class="btn btn-lg btn-primary" id="reset" onclick="resetdata()" disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src="js/index.js"></script>
+                    
+            
+    </body>
+</html>
